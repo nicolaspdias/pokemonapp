@@ -9,7 +9,7 @@ import './styles/styles.css';
 const App = () => {
     return (
         <ThemeProvider>
-            <Router basename="/poke-app">
+            <Router>
                 <div>
                     <ThemeToggle />
                     <Routes>

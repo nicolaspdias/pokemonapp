@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'VT323', sans-serif; /* Definindo a fonte padrão */
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: normal;
+    height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+}
+
+.light {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.dark {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    font-weight: normal;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: normal;
+    text-transform: capitalize;
+    color:#333333;
+}
+
+h3 {
+    font-size: 1.6em;
+    font-weight: normal;
+    color: #333333;
+}
+
+button {
+    margin: 10px 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.search-bar {
+    background-color: rgb(49, 49, 49);
+    color: white;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center; /* Centraliza a barra de pesquisa */
+}
+
+.search-input {
+    padding: 10px;
+    margin: 10px;
+    width: 80%; /* Ajuste a largura conforme necessário */
+    border: none;
+    border-radius: 5px;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: #0056b3;
+    }
+}
